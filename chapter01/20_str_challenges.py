@@ -14,5 +14,10 @@ print("=" * 14)
 for num in range(17):
     print(num, end=" ")
 print()
-
 print(num)
+
+for item in range(10):
+    if item % 3 ==0:
+        magic_number = item
+
+print(f"Magic number: {magic_number}")
