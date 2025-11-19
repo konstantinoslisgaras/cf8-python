@@ -22,7 +22,7 @@ class Student:
         return (datetime.now().year - year_of_birth)
 
     def __str__(self):
-        return f"ID: {self.__id}\n{self._lastname} {self._firstname}\nAge: {self.age} - Born: {self._year_of_birth}\nNumber of Lessons: {len(self.lessons)}"
+        return f"ID: {self.__id}\n{self._lastname} {self._firstname}\nAge: {self.age} | Born: {self._year_of_birth}\nNumber of Lessons: {len(self.lessons)}"
 
     def print_lessons(self):
         for key, value in enumerate(self.lessons, start=1):
