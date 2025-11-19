@@ -21,15 +21,34 @@ class Point:
     @classmethod
     def get_count(cls):
         return cls.__count
+    
+    # getters and setters
+    @property
+    def x(self):
+        return self.__x
+
+    @x.setter
+    def x(self, x):
+        self.__x = x
+
+    @property
+    def y(self):
+        return self.__y
+    
+    @y.setter
+    def y(self, y):
+        self.__y = y
 
 def main():
     p1 = Point(10, 20)
     p2 = Point(10, 20)
+    p2.x = 500
     p3 = Point(20, 40)
     print(p1 == p2)
     print(Point.get_count())
-    print(p1.x)
-    p1.x = 100
+    print(p1.x, p1.y)
+    print(p2.x, p2.y)
+    print(p3.x, p3.y)
 
 if __name__ == "__main__":
     main()
