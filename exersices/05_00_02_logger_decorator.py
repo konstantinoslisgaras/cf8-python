@@ -25,7 +25,7 @@ def logger_decorator(func):
             format="%(asctime)s:%(levelname)s:%(name)s:%(message)s"
         )
         logger.info(f"{func.__name__}, was succesfully executed.")
-        print(f"{func.__name__} logged succesfully")
+        print(f"{func.__name__} logged succesfully.")
         return func(*args, **kwargs)
     
     return inner_function

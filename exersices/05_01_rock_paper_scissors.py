@@ -1,7 +1,7 @@
 import random
 
 """
-Simple rock paper scissors game that is 33% "rigged" in favor of the computer.
+Simple Rock Paper Scissors game that is 33% "rigged" in favor of the computer.
 """
 
 def print_welcome_message() -> None:
